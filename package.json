@@ -1,12 +1,14 @@
 {
-  "name": "liri-bot",
+  "name": "liribot",
   "version": "1.0.0",
   "description": "",
   "main": "keys.js",
   "dependencies": {
     "axios": "^0.19.0",
     "dotenv": "^8.0.0",
+    "inquirer": "^6.4.0",
     "keys": "^0.1.2",
+    "moment": "^2.24.0",
     "node-spotify-api": "^1.1.1",
     "require": "^2.4.20"
   },
@@ -16,12 +18,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GarrettYoung510/LIRI-Bot.git"
+    "url": "git+https://github.com/Adamugas/LiriBot.git"
   },
-  "author": "Adam",
+  "author": "adam",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GarrettYoung510/LIRI-Bot/issues"
+    "url": "https://github.com/Adamugas/LiriBot/issues"
   },
-  "homepage": "https://github.com/GarrettYoung510/LIRI-Bot#readme"
+  "homepage": "https://github.com/Adamugas/LiriBot#readme"
 }

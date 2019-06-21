@@ -10,10 +10,7 @@ const keys = require("./keys.js");
 
 var Spotify = require('node-spotify-api');
 const spotify = new Spotify(keys.spotify);
-// var spotify = new Spotify({ 
-//     id: defd70024dba40e9bd3a04faa3cd1fe6, 
-//     secret: 622e33b0a0f94fb8b6c074b4c1e416e6
-//         });
+
 
 // spotify
 console.log(spotify);
