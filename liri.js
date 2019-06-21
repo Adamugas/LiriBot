@@ -1,6 +1,5 @@
 require("dotenv").config();
-// // require dotenv or .env
-// // code to read and set any environment variables with the dotenv package
+
 
 const axios = require("axios");
 // // require axios
@@ -21,16 +20,7 @@ const inquirer = require("inquirer");
 const moment = require('moment');
 // moment
 moment().format();
-// brings in the function for formatting 
 
-
-
-// var userRequest = process.argv.slice(2).join(" ");
-
-
-
-
-// make it so liri.js can take in one of the following commands
 const liri = function() {
     inquirer.prompt([{
             // list for user to make a selection
@@ -107,11 +97,7 @@ const liri = function() {
                     console.log(`SONG NAME: ${response.album}`);
                     console.log(`SONG NAME2: ${JSON.stringify(response.album)}`);
 
-                    // a preview link of the song from Spotify
-
-                    // the album that the song is from
-
-                    // if no song provided default to "The Sign" by Ace of Base
+                 
                 })
                 .catch(function(err) {
                     console.log(err);
@@ -144,11 +130,7 @@ const liri = function() {
                 console.log("Actors: " + response.data.Actors);
                 // actors in the movie
 
-                // IF user does not type in movie output data for "Mr. Nobody"
-                // display message if you have not watched mr nobody you should
-                // it is on netflix!
-                // use axios package to retrieve data from the OMDB API
-                // use the trilogy api
+              
             } catch (e) {
                 console.log(e);
             }
@@ -162,12 +144,7 @@ const liri = function() {
             getSpotifyInfo();
             console.log(`Song Details`)
         } else if (user.choice === 'movie-this') {
-            // if chose to search a movie
-            // if (user.search == undefined) {
-            //     searchInput = 'mr nobody';
-            //     getMovieInfo();
-            //     console.log(`Movie Details`)
-            // } else {
+         
             getMovieInfo();
             // console.log(searchInput);
             console.log(`Movie Details`)
@@ -178,21 +155,3 @@ const liri = function() {
     });
 }
 liri();
-
-// }
-
-
-
-
-
-// do-what-it-says run one of the previous programs
-// using fs node package LIRI will take the text inside random.txt and use it 
-// the text in random.txt to test out this feature 
-
-// create a readme.md
-// add to your portfolio
-
-// BONUS
-// log the data to your terminal/bash window output the data to a .txt file called log.txt
-// make sure you append each command you run to the log.txt
-// do not overwrite your file each time you run a command
